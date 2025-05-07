@@ -1,0 +1,36 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{     // defining variables
+    int input = get_int("change owed: ");
+    int coins = 0;
+    int dollar = 100;
+    int quarter = 25;
+    int dime = 10;
+    int nickel = 5;
+    int penny = 1;
+
+    // get amount from user
+    if(input < 100)
+        {
+        while(input >= quarter)
+             {input = input - 25; coins++;}
+            // check for quarters
+
+        while (input >= dime)
+              {input = input - 10; coins++;}
+            // check for dimes
+
+        while (input >= nickel)
+              {input = input - 5; coins++;}
+            // check for nickels
+
+        while (input >= penny)
+              {input = input - 1; coins++;}
+            // check for pennies
+            }
+
+    printf("%i \n", coins);
+    // print coin amount
+}
