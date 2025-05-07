@@ -1,4 +1,4 @@
-# another exercise in C
+# loop-exercise-in-C
  <b>This program includes libraries created by Harvard University's Intro To Comp Sci 50</b>
  <br/>
  <i> a program that recieves input for change from the user and outputs the amount of coins necessary for the amount of change </i>
